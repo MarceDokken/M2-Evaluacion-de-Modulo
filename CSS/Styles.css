@@ -1,8 +1,8 @@
 
 .carousel-item img {
-  height: 400px;              /* Altura fija */
-  object-fit: cover;          /* Recorta la imagen para que llene el espacio sin deformarse */
-  width: 100%;                /* Que ocupe todo el ancho disponible */
+  height: 400px;             
+  object-fit: cover;          
+  width: 100%;                
 }
 
 .carousel-caption h5 {

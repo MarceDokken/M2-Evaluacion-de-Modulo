@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Consejos de Seguridad | Ciberseguridad</title>
   <link rel="stylesheet" href="/Evaluación de modulo [Actividad Evaluada]/CSS/Styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 </head>
 <body class="d-flex flex-column min-vh-100">
@@ -38,7 +40,8 @@
       <div class="col-md-6 col-lg-4">
         <div class="card h-100 shadow-sm border-primary">
           <div class="card-body">
-            <h5 class="card-title text-primary fw-bold">Usa contraseñas seguras</h5>
+            <h5 class="card-title text-primary fw-bold">
+                <i class="fas fa-lock me-2"></i>Usa contraseñas segurasUsa contraseñas seguras</h5>
             <p class="card-text">Utiliza combinaciones de letras, números y símbolos. Evita datos personales y cambia tus contraseñas periódicamente.</p>
           </div>
         </div>
@@ -48,7 +51,8 @@
       <div class="col-md-6 col-lg-4">
         <div class="card h-100 shadow-sm border-success">
           <div class="card-body">
-            <h5 class="card-title text-success fw-bold">Actualiza tus dispositivos</h5>
+            <h5 class="card-title text-success fw-bold">
+                <i class="fas fa-mobile-alt"></i> Actualiza tus dispositivos</h5>
             <p class="card-text">Mantén actualizado tu sistema operativo y tus aplicaciones para corregir fallos de seguridad conocidos.</p>
           </div>
         </div>
@@ -58,7 +62,7 @@
       <div class="col-md-6 col-lg-4">
         <div class="card h-100 shadow-sm border-warning">
           <div class="card-body">
-            <h5 class="card-title text-warning fw-bold">No hagas clic en enlaces sospechosos</h5>
+            <h5 class="card-title text-warning fw-bold"><i class="fas fa-exclamation-triangle"></i> No hagas clic en enlaces sospechosos</h5>
             <p class="card-text">Evita abrir enlaces en correos electrónicos o mensajes no verificados. Podrían conducir a sitios maliciosos.</p>
           </div>
         </div>
@@ -68,7 +72,7 @@
       <div class="col-md-6 col-lg-4">
         <div class="card h-100 shadow-sm border-danger">
           <div class="card-body">
-            <h5 class="card-title text-danger fw-bold">Activa la autenticación en dos pasos</h5>
+            <h5 class="card-title text-danger fw-bold"><i class="fas fa-user-shield"></i> Activa la autenticación en dos pasos</h5>
             <p class="card-text">Protege tus cuentas añadiendo una capa extra de seguridad además de la contraseña.</p>
           </div>
         </div>
@@ -78,7 +82,7 @@
       <div class="col-md-6 col-lg-4">
         <div class="card h-100 shadow-sm border-info">
           <div class="card-body">
-            <h5 class="card-title text-info fw-bold">Evita redes Wi-Fi públicas sin protección</h5>
+            <h5 class="card-title text-info fw-bold"> <i class="fas fa-wifi"></i> Evita redes Wi-Fi públicas sin protección</h5>
             <p class="card-text">Conéctate solo a redes seguras o usa una VPN cuando estés en lugares públicos.</p>
           </div>
         </div>
@@ -88,12 +92,80 @@
       <div class="col-md-6 col-lg-4">
         <div class="card h-100 shadow-sm border-dark">
           <div class="card-body">
-            <h5 class="card-title text-dark fw-bold">Haz copias de seguridad periódicas</h5>
+            <h5 class="card-title text-dark fw-bold"><i class="fas fa-database"></i> Haz copias de seguridad periódicas</h5>
             <p class="card-text">Guarda tus archivos importantes en un disco externo o en la nube para prevenir pérdidas por fallos o ataques.</p>
           </div>
         </div>
       </div>
     </section>
+
+        <!-- Formulario de Contacto -->
+    <section class="m-5">
+      <h2 class="mb-3">Solicita más información</h2>
+      <form id="formContacto">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre aquí" required>
+        </div>
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo aquí" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="4" placeholder="Cuentanos como te podemos ayudar" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Botón para Modal -->
+    <div class="text-center mb-5">
+      <button class="btn btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#modalTestSeguridad">
+        ¡Haz clic aquí y gana 1.000 USD!
+    </button>
+    </div>
+
+    <!-- Modal Test de Seguridad -->
+    <div class="modal fade" id="modalTestSeguridad" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <h5 class="modal-title text-danger" id="testModalLabel">¡Has caído en un intento de phishing!</h5>
+                <p class="alert alert-danger mt-3">
+                  Este mensaje simulaba un fraude. Aquí, aprenderás a identificar estas amenazas realizando el siguiente test.
+                </p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <form id="formTest">
+              <p>1. ¿Qué es el phishing?</p>
+              <select class="form-select mb-3" id="respuesta1">
+                <option value="">Selecciona una opción</option>
+                <option value="0">Un tipo de antivirus</option>
+                <option value="1">Una técnica de suplantación de identidad</option>
+              </select>
+
+              <p>2. ¿Qué hacer si recibes un correo sospechoso?</p>
+              <select class="form-select mb-3" id="respuesta2">
+                <option value="">Selecciona una opción</option>
+                <option value="0">Hacer clic en el enlace</option>
+                <option value="1">Eliminarlo sin abrirlo</option>
+              </select>
+
+              <button type="submit" class="btn btn-primary">Enviar Respuestas</button>
+              <div id="feedbackTest" class="mt-3"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
   </main>
 
   <!-- FOOTER -->
@@ -104,6 +176,11 @@
     </div>
   </footer>
 
+  
+  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="/Evaluación de modulo [Actividad Evaluada]/JS/script.js"></script>
 </body>
 </html>
