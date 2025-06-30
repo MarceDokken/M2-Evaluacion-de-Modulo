@@ -1,0 +1,11 @@
+
+.carousel-item img {
+  height: 400px;              /* Altura fija */
+  object-fit: cover;          /* Recorta la imagen para que llene el espacio sin deformarse */
+  width: 100%;                /* Que ocupe todo el ancho disponible */
+}
+
+.carousel-caption h5 {
+  border: 3px solid red;
+  backdrop-filter: blur(3px);
+}

@@ -4,20 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amenazas Comunes | Ciberseguridad</title>
+  <link rel="stylesheet" href="/Evaluación de modulo [Actividad Evaluada]/CSS/Styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 </head>
 <body class="d-flex flex-column min-vh-100">
 
   <header>
-    <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <!-- Logo y Título -->
         <a class="navbar-brand fw-bold" href="index.html">Ciberseguridad</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Enlaces de navegación -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
@@ -30,12 +28,44 @@
   </header>
 
   <main class="container my-5">
-    <!-- Título -->
-    <h1 class="text-center mb-4">Amenazas Cibernéticas Comunes</h1>
-    <p class="text-center lead mb-5">Conoce las principales amenazas digitales y cómo afectan a usuarios y empresas.</p>
+
+    <!-- Carrusel -->
+
+    <div id="carouselAmenazas" class="carousel slide mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Phishing-->
+        <div class="carousel-item active">
+          <img src="/Evaluación de modulo [Actividad Evaluada]/IMG/Amenazas Comunes/Phishing.jpg" class="d-block w-100" alt="Phishing">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fw-bold bg-black bg-opacity-75 w-50 mx-auto text-white p-2 rounded">Phishing</h5>
+          </div>
+        </div>
+        <!-- Ransomware -->
+        <div class="carousel-item">
+          <img src="/Evaluación de modulo [Actividad Evaluada]/IMG/Amenazas Comunes/Ransomware.jpg" class="d-block w-100" alt="Ransomware">
+          <div class="carousel-caption"><h5 class="fw-bold bg-black bg-opacity-75 w-50 mx-auto text-white p-2 rounded">Ransomware</h5></div>
+        </div>
+        <!-- Malware-->
+        <div class="carousel-item">
+          <img src="/Evaluación de modulo [Actividad Evaluada]/IMG/Amenazas Comunes/Malware.jpg" class="d-block w-100" alt="Malware">
+          <div class="carousel-caption"><h5 class="fw-bold bg-black bg-opacity-75 w-50 mx-auto text-white p-2 rounded">Malware</h5></div>
+        </div>
+        <!-- DDos-->
+        <div class="carousel-item">
+          <img src="/Evaluación de modulo [Actividad Evaluada]/IMG/Amenazas Comunes/DDos.jpg" class="d-block w-100" alt="DDoS">
+          <div class="carousel-caption"><h5 class="fw-bold bg-black bg-opacity-75 w-50 mx-auto text-white p-2 rounded">DDoS</h5></div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselAmenazas" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselAmenazas" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
 
     <!-- Tarjetas de amenazas -->
-    <section class="row g-4">
+    <section class="row g-4 mb-5">
       <!-- Phishing -->
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-danger">
@@ -50,7 +80,7 @@
         <div class="card h-100 border-warning">
           <div class="card-body">
             <h5 class="card-title text-warning">Ransomware</h5>
-            <p class="card-text">Malware que bloquea el acceso a tus archivos y exige un pago para liberarlos.</p>
+            <p class="card-text">Malware que bloquea el acceso a archivos y exige un pago para liberarlos.</p>
           </div>
         </div>
       </div>
@@ -59,7 +89,7 @@
         <div class="card h-100 border-info">
           <div class="card-body">
             <h5 class="card-title text-info">Malware</h5>
-            <p class="card-text">Software malicioso que se instala sin permiso para dañar, robar o espiar información.</p>
+            <p class="card-text">Software malicioso que se instala sin permiso, daña o espía datos.</p>
           </div>
         </div>
       </div>
@@ -74,10 +104,90 @@
       </div>
     </section>
 
-    <!-- Ejemplos reales -->
+    <!-- Acordeón de casos reales -->
+    <section>
+        <div class="accordion my-5" id="accordionCasosReales">
+    <!-- Título  -->
+      <h2 class="text-center mb-4">Casos Reales de Amenazas Comunes</h2>
+  <!-- Phishing -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingPhishing">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePhishing" aria-expanded="true" aria-controls="collapsePhishing">
+        Estafa por phishing que suplanta a GLS (España, 2025)
+      </button>
+    </h2>
+    <div id="collapsePhishing" class="accordion-collapse collapse show" aria-labelledby="headingPhishing" data-bs-parent="#accordionCasosReales">
+      <div class="accordion-body">
+        En mayo de 2025, se detectó una campaña de phishing en España que usaba correos fraudulentos aparentando ser de GLS. El objetivo era engañar a los usuarios para que ingresaran sus datos personales y bancarios con el pretexto de pagar 1,12€. Las autoridades recomendaron eliminar el correo y no interactuar con él.
+        <br><br>
+        <strong>Fuente:</strong><br>
+        La Guardia Civil e INCIBE. (31 de mayo de 2025). <em>La Guardia Civil alerta sobre una nueva estafa que suplanta a GLS</em>. Cadena SER.  
+        <br>
+        <a href="https://cadenaser.com/nacional/2025/05/31/la-guardia-civil-alerta-sobre-una-nueva-estafa-que-suplanta-a-gls-no-piques-es-phishing-cadena-ser/" target="_blank">Ver noticia en Cadena SER</a>
+      </div>
+    </div>
+  </div>
 
+  <!-- Ransomware -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingRansomware">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRansomware" aria-expanded="false" aria-controls="collapseRansomware">
+        Ransomware a Telecom Argentina (Argentina, 2020)
+      </button>
+    </h2>
+    <div id="collapseRansomware" class="accordion-collapse collapse" aria-labelledby="headingRansomware" data-bs-parent="#accordionCasosReales">
+      <div class="accordion-body">
+        El 18 de julio de 2020, Telecom Argentina fue víctima de un ransomware que cifró archivos críticos de su red interna. Los atacantes exigieron 7,5 millones de dólares como rescate. Fue uno de los mayores ciberataques a una empresa de telecomunicaciones en América Latina.
+        <br><br>
+        <strong>Fuente:</strong><br>
+        ManageEngine. (2020, julio 18). <em>Telecom Argentina, víctima de un ataque ransomware</em>. ManageEngine.  
+        <br>
+        <a href="https://www.manageengine.com/latam/desktop-central/soluciones-gestion-seguridad-endpoints/cyber-town/telecom-argentina-victima-ataque-ransomware.html" target="_blank">Ver noticia en ManageEngine</a>
+      </div>
+    </div>
+  </div>
 
-    
+  <!-- Malware -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingMalware">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMalware" aria-expanded="false" aria-controls="collapseMalware">
+        Troyano Grandoleiro en factura de Endesa (España, 2025)
+      </button>
+    </h2>
+    <div id="collapseMalware" class="accordion-collapse collapse" aria-labelledby="headingMalware" data-bs-parent="#accordionCasosReales">
+      <div class="accordion-body">
+        En febrero de 2025, usuarios en España recibieron correos falsos que simulaban facturas de la empresa Endesa. Al abrir el archivo adjunto, se ejecutaba el troyano bancario Grandoleiro, diseñado para robar credenciales de acceso a cuentas bancarias.
+        <br><br>
+        <strong>Fuente:</strong><br>
+        El País. (11 de febrero de 2025). <em>Este peligroso troyano bancario vuelve a las andadas haciéndose pasar por una factura de Endesa</em>. El País.  
+        <br>
+        <a href="https://cincodias.elpais.com/smartlife/lifestyle/2025-02-11/este-peligroso-troyano-bancario-vuelve-a-las-andadas-haciendose-pasar-por-una-factura-de-endesa.html" target="_blank">Ver noticia en El País</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- DDoS -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingDdos">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDdos" aria-expanded="false" aria-controls="collapseDdos">
+        Ataque DDoS a Dyn (Global, 2016)
+      </button>
+    </h2>
+    <div id="collapseDdos" class="accordion-collapse collapse" aria-labelledby="headingDdos" data-bs-parent="#accordionCasosReales">
+      <div class="accordion-body">
+        El 21 de octubre de 2016, un ataque DDoS masivo al proveedor de DNS Dyn afectó a gigantes de Internet como Twitter, Spotify y Reddit. El ataque se realizó mediante la botnet Mirai, que utilizó miles de dispositivos IoT vulnerables para saturar los servidores de Dyn.
+        <br><br>
+        <strong>Fuente:</strong><br>
+        Wikipedia. (2025). <em>Ciberataque a Dyn de octubre de 2016</em>. Wikipedia.  
+        <br>
+        <a href="https://es.wikipedia.org/wiki/Ciberataque_a_Dyn_de_octubre_de_2016" target="_blank">Ver información en Wikipedia</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+    </section>
+
   </main>
 
   <footer class="bg-dark text-white text-center py-3 mt-auto">
