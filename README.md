@@ -9,7 +9,7 @@ Incluye funcionalidades interactivas como formularios, un test educativo y un di
 ---
 
 ## 🧱 Estructura del Proyecto
-
+```
 📁 Evaluación de modulo [Actividad Evaluada]
 ├── 📁 CSS
 │ └── Styles.css
@@ -21,7 +21,7 @@ Incluye funcionalidades interactivas como formularios, un test educativo y un di
 ├── amenazas.html
 ├── consejos.html
 └── README.md
-
+```
 - **index.html:** Página principal, introducción a la ciberseguridad.
 - **amenazas.html:** Explica amenazas comunes como phishing, ransomware, malware y DDoS, con ejemplos reales.
 - **consejos.html:** Muestra buenas prácticas, incluye un formulario con validación y un test interactivo.
